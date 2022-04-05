@@ -52,3 +52,10 @@ The usage of the word followed [this paper](https://arxiv.org/pdf/1904.01169.pdf
 - Dropout
 - Dense
 
+
+## Before running main.py
+This should be enough for the start. You will need more packages depending on the design of your solution.
+```console
+foo@bar:~$ pip install -r requirements.txt
+foo
+```
