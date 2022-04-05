@@ -29,7 +29,7 @@ EEW systems need to reliably detect the P-waves as this will allow for faster de
 
 ## Model Architecture
 
-!["picking strategy"](./picking_strategy.png)
+!["picking strategy"](./picking_strategy_new.png)
 
 ***Figure 3 |** P-wave Detection Strategy*
 
