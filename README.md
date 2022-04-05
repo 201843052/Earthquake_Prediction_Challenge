@@ -2,7 +2,7 @@
 
 An earthquake early warning system (EEW) limits the impact of future earthquakes on communities living nearby. The system detects an earthquake at its very beginning and rapidly issues alerts to users in its path. The alert outpaces strong earthquake shaking and may provide critical time to take basic protective actions such as seeking cover or exiting a building. If you would like to know more about EEW systems, you can refer to [this paper](https://www.researchgate.net/publication/330744338_Earthquake_Early_Warning_Advances_Scientific_Challenges_and_Societal_Needs).
 
-!["Earthquake Early Warning System"](./fig1.png)
+!["Earthquake Early Warning System"](./figure/fig1.png)
 
 *Figure 1 | The principle and main components of earthquake early warning system.*
 
@@ -12,7 +12,7 @@ The backbone of an EEW system is a network of seismic instruments continuously r
 
 A seismic station is a device that records ground motion. In particular Grillo devices record the **acceleration** of the ground motion. The device uses a similar (albeit more precise) accelerometer sensor than you would find in consumer electronics such as smartphones. The device records the ground acceleration in three components - two horizontal ones and one vertical (x, y, z).
 
-!["Untitled"](./fig2.png)
+!["Untitled"](./figure/fig2.png)
 
 ***Figure 2 |** Left: Description of Grillo the sensor. Right: A three-component recording of an earthquake arriving at a single seismic station.*
 
@@ -25,7 +25,7 @@ EEW systems need to reliably detect the P-waves as this will allow for faster de
 
 ## Model Architecture
 ### Overall Architecture
-!["picking strategy"](./picking_strategy_new.png)
+!["picking strategy"](./figure/picking_strategy_new.png)
 
 ***Figure 3 |** P-wave Detection Strategy*
 
