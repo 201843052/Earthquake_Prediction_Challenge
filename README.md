@@ -33,7 +33,7 @@ EEW systems need to reliably detect the P-waves as this will allow for faster de
 
 ***Figure 3 |** P-wave Detection Strategy*
 
-In detecting the P-wave, we follow these methodology:
+In detecting the P-wave, we follow these [methodology](https://www.sciencedirect.com/science/article/pii/S2405844021027080):
 
 - Step1: Create rolling window from time series with length L and step-size T
 - Step2: Normalize time domain, and concatenate discrete cosine transform (DCT) as the frequency domain 
