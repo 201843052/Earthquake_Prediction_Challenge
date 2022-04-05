@@ -1,13 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[ ]:
-
-
-get_ipython().system('pip install obspy')
-get_ipython().system('pip install numpy==1.20.0')
-
-
 # In[2]:
 
 
