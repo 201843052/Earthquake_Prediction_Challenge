@@ -28,7 +28,7 @@ As mentioned above, once an earthquake occurs, it generates two kinds of waves t
 EEW systems need to reliably detect the P-waves as this will allow for faster detections and therefore provide more time for the end users to take action. There is a number of traditional seismological algorithms that are usually based on rapid increase of [amplitude of ground motion](https://www.esgsolutions.com/technical-resources/microseismic-knowledgebase/event-detection-and-triggering). They are simple and effective, yet, they lack the ability to distinguish between signals created by earthquakes and other kind of disturbances (slamming doors, passing trucks..). In recent years, seismologists and data scientist have started to utilize neural-networks-based algorithms, hoping that those will be able to reduce the number of false positive detections.
 
 ## Model Architecture
-
+### Overall Architecture
 !["picking strategy"](./picking_strategy_new.png)
 
 ***Figure 3 |** P-wave Detection Strategy*
@@ -43,4 +43,16 @@ In detecting the P-wave, we follow these [methodology](https://www.sciencedirect
 - ... Repeat Step 1,2,3,5 for 3 times ...
 - Return the average of the starting time and the end time of the highest probability window
 
+### Backbone
+
+The usage of the word followed [this paper](https://arxiv.org/pdf/1904.01169.pdf)[(Further explanation)](https://stackoverflow.com/questions/59868132/what-does-backbone-mean-in-a-neural-network#:~:text=CNNs%20are%20used%20for%20extracting,and%20datasets%20such%20as%20ImageNet.). The "backbone" we chose to use are CNN based, each with different hyperparameter chosen via cross validation and grid search. The general form of these models follows:
+
+- CONV2D
+- Dropout
+- CONV2D
+- Dropout
+- Flatten
+- Dense
+- Dropout
+- Dense
 
