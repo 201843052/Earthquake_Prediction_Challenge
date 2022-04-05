@@ -4,7 +4,7 @@
 
 An earthquake early warning system limits the impact of future earthquakes on communities living nearby. The system detects an earthquake at its very beginning and rapidly issues alerts to users in its path. The alert outpaces strong earthquake shaking and may provide critical time to take basic protective actions such as seeking cover or exiting a building. If you would like to know more about EEW systems, you can refer to [this paper](https://www.researchgate.net/publication/330744338_Earthquake_Early_Warning_Advances_Scientific_Challenges_and_Societal_Needs).
 
-![version_web.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cd811caf-0721-421e-b3b7-329f2b3d6bd6/version_web.png)
+![./fjg1.png]
 
 *Figure 1 | The principle and main components of earthquake early warning system.*
 
@@ -18,7 +18,7 @@ Grillo, a social enterprise, developed a novel EEW solution that uses low-cost, 
 
 A seismic station is a device that records ground motion. In particular Grillo devices record the **acceleration** of the ground motion. The device uses a similar (albeit more precise) accelerometer sensor than you would find in consumer electronics such as smartphones. The device records the ground acceleration in three components - two horizontal ones and one vertical (x, y, z).
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/547c8b61-4bcf-4a86-8199-6f941e7742ce/Untitled.png)
+![./fig2.png]
 
 ***Figure 2 |** Left: Description of Grillo the sensor. Right: A three-component recording of an earthquake arriving at a single seismic station.*
 
