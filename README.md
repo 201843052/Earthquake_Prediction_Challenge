@@ -1,7 +1,5 @@
 # Earthquake_Prediction_Challenge
 
-## Introduction
-
 An earthquake early warning system (EEW) limits the impact of future earthquakes on communities living nearby. The system detects an earthquake at its very beginning and rapidly issues alerts to users in its path. The alert outpaces strong earthquake shaking and may provide critical time to take basic protective actions such as seeking cover or exiting a building. If you would like to know more about EEW systems, you can refer to [this paper](https://www.researchgate.net/publication/330744338_Earthquake_Early_Warning_Advances_Scientific_Challenges_and_Societal_Needs).
 
 !["Earthquake Early Warning System"](./fig1.png)
@@ -28,3 +26,21 @@ As mentioned above, once an earthquake occurs, it generates two kinds of waves t
 - **S-wave / Secondary wave:** The secondary wave travels slower than the P-wave (3 to 5 km/s). However, it carries more energy and causes more damage than the P-wave.
 
 EEW systems need to reliably detect the P-waves as this will allow for faster detections and therefore provide more time for the end users to take action. There is a number of traditional seismological algorithms that are usually based on rapid increase of [amplitude of ground motion](https://www.esgsolutions.com/technical-resources/microseismic-knowledgebase/event-detection-and-triggering). They are simple and effective, yet, they lack the ability to distinguish between signals created by earthquakes and other kind of disturbances (slamming doors, passing trucks..). In recent years, seismologists and data scientist have started to utilize neural-networks-based algorithms, hoping that those will be able to reduce the number of false positive detections.
+
+## Model Architecture
+
+!["picking strategy"](./picking_strategy.png)
+
+***Figure 3 |** P-wave Detection Strategy*
+
+In detecting the P-wave, we follow these methodology:
+
+- Step1: Create rolling window from time series with length L and step-size T
+- Step2: Normalize time domain, and concatenate discrete cosine transform (DCT) as the frequency domain 
+- Step3: Calculate the probability of this window containing p-wave using DL model
+- Step4: If the maximum probability across all window falls below a threshold, then return null
+- Step5: Select highest probability window
+- ... Repeat Step 1,2,3,5 for 3 times ...
+- Return the average of the starting time and the end time of the highest probability window
+
+
