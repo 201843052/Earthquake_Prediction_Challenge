@@ -45,7 +45,7 @@ In detecting the P-wave, we follow these [methodology](https://www.sciencedirect
 
 ### Backbone
 
-The usage of the word followed [this paper](https://arxiv.org/pdf/1904.01169.pdf)[(Further explanation)](https://stackoverflow.com/questions/59868132/what-does-backbone-mean-in-a-neural-network#:~:text=CNNs%20are%20used%20for%20extracting,and%20datasets%20such%20as%20ImageNet.). The "backbone" we chose to use are CNN based, each with different hyperparameter chosen via cross validation and grid search. The general form of these models follows:
+The usage of the word followed [this paper](https://arxiv.org/pdf/1904.01169.pdf) [(further explanation)](https://stackoverflow.com/questions/59868132/what-does-backbone-mean-in-a-neural-network#:~:text=CNNs%20are%20used%20for%20extracting,and%20datasets%20such%20as%20ImageNet.). The "backbone" we chose to use are CNN based, each with different hyperparameter chosen via cross validation and grid search. The general form of these models follows:
 
 - CONV2D
 - Dropout
