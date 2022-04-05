@@ -1,5 +1,7 @@
 # Earthquake_Prediction_Challenge
 
+[Instruction to retrieve Dataset](https://github.com/openeew/openeew/tree/master/data)
+
 An earthquake early warning system (EEW) limits the impact of future earthquakes on communities living nearby. The system detects an earthquake at its very beginning and rapidly issues alerts to users in its path. The alert outpaces strong earthquake shaking and may provide critical time to take basic protective actions such as seeking cover or exiting a building. If you would like to know more about EEW systems, you can refer to [this paper](https://www.researchgate.net/publication/330744338_Earthquake_Early_Warning_Advances_Scientific_Challenges_and_Societal_Needs).
 
 !["Earthquake Early Warning System"](./figure/fig1.png)
